@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Headlines</title>
+	</head>
+	<body>
+		<h1>Headlines</h1>
+        <p>count: {{ count }}</p>
+		{% for article in articles %}
+            <b><a href="{{article.link}}" target="_blank"> {{article.title}} </a></b><br />
+            <i> {{article.published}} </i><br />
+            <p> {{article.summary}} </p>
+            <hr color="grey">
+        {% endfor %}
+	</body>
+</html>
